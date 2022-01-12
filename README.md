@@ -19,3 +19,5 @@ Examples:
 We will review the design, naming, comments, code structure, and algorithm. 
 
 Please note that you may not copy and paste code from the Internet into your solution. You must write the code yourself. If you learn about specific parts of solving the problem from the Internet you must include the source (with an URL to the source and explain what you used as a comment in the code).
+
+Solution:
