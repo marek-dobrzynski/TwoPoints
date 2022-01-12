@@ -18,7 +18,7 @@ namespace TwoPointsApp
             InitializeComponent();
             _pixelManager = PixelManager.CreateInstance(canvas);
         }
-        
+
         private void User_click(object sender, MouseButtonEventArgs e)
         {
             try
@@ -26,7 +26,7 @@ namespace TwoPointsApp
                 var point = e.GetPosition((IInputElement)sender);
                 SetLabels(point);
                 _pixelManager.UserClick(point);
-                
+
             }
             catch (Exception exception)
             {
@@ -50,13 +50,21 @@ namespace TwoPointsApp
             {
                 point2.Content = $"x: {point.X} y: {point.Y}";
             }
-            
+
+        }
+
+        private void ClearLabels()
+        {
+            point1.Content = null;
+            point2.Content = null;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            ClearLabels();
             _pixelManager.ClearCanvas();
             _pixelManager = PixelManager.CreateInstance(canvas);
+
         }
     }
 }
