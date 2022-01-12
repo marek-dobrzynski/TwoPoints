@@ -24,13 +24,18 @@ Solution:
 
 I used the Breadth-First Search algorithm and incidence lists to solve the problem. 
 Steps:
+
 -> defined canvas as a non-directed graph -> every pixel is a node and every node has neighbours (pixels) 
+
 -> put all pixels to incidence lists where index is a pixel id and value is a collection of neighbours
+
 -> run BFS algorithm with incidence lists for selected pixels (user cliked two times on canvas)
+
 -> draw line -> pixels chosen during BFS algorithm run 
+
 -> remove used pixels from collection of pixels  
 
-To see more details check class comments.
+To see more details check comments in classes. The code is mine, I didn't copy anything.   
 
 PS
-I set a 3px width to draw a line on the canvas (it looks better IMO) so sometimes when the lines are very close it seems like one is on top of the other but logically it's okay I think;)
+I set a 3px width to draw a line on the canvas (it looks better then 1px IMO) so sometimes when the lines are very close it seems like one is on top of the other but logically it's okay I think;)
