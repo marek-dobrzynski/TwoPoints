@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPointsApp", "TwoPointsApp\TwoPointsApp.csproj", "{CE69D7AA-415B-4351-B00F-15D6C0E33262}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E344D2BA-6A48-4767-A69C-282563F582F7} = {E344D2BA-6A48-4767-A69C-282563F582F7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPointsLib", "TwoPointsLib\TwoPointsLib.csproj", "{E344D2BA-6A48-4767-A69C-282563F582F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE69D7AA-415B-4351-B00F-15D6C0E33262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE69D7AA-415B-4351-B00F-15D6C0E33262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE69D7AA-415B-4351-B00F-15D6C0E33262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE69D7AA-415B-4351-B00F-15D6C0E33262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E344D2BA-6A48-4767-A69C-282563F582F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E344D2BA-6A48-4767-A69C-282563F582F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E344D2BA-6A48-4767-A69C-282563F582F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E344D2BA-6A48-4767-A69C-282563F582F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46AE6472-5207-4A87-8332-4ED3B17AA00C}
+	EndGlobalSection
+EndGlobal

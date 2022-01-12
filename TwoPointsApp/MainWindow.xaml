@@ -1,0 +1,17 @@
+﻿<Window x:Class="TwoPointsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TwoPointsApp"
+        mc:Ignorable="d"
+        Title="TwoPointsApp" Height="500" Width="790" Background="#30FFFFFF" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-7">
+
+        <Canvas x:Name="canvas" Background="#FFFFFFFF" MouseLeftButtonUp="User_click" Height="400" Width="750" SnapsToDevicePixels="True" Margin="10,10,25,47" Grid.ColumnSpan="2">
+
+
+        </Canvas>
+        <Button Content="Clear canvas" HorizontalAlignment="Left" Margin="671,424,0,0" VerticalAlignment="Top" Width="89" Height="30" RenderTransformOrigin="0.492,1.145" Click="Button_Click"/>
+    </Grid>
+</Window>
