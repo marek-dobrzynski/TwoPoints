@@ -4,21 +4,21 @@ using TwoPointsLib.Interfaces;
 namespace TwoPointsLib.Collections
 {
     /// <summary>
-    /// Class is responsible for creating incident Lists. Indicident lists are usually used to present a graf structure. In my case 
+    /// Class is responsible for creating incident Lists. Incidence lists are usually used to present a graf structure. In my case 
     /// I used Dictionary. Every index(Pixel id) in dictionary holds his neighbours as collection of Pixels ids (List).
     /// </summary>
-    public class IncidentLists : IIncidentLists
+    public class IncidenceLists : IIncidenceLists
     {
         public Dictionary<int, List<int>> Lists { get; private set; }
 
-        public IncidentLists(IPixelsSets pixelsSets)
+        public IncidenceLists(IPixelsSets pixelsSets)
         {
             try
             {
                 Lists = new Dictionary<int, List<int>>();
                 Init(pixelsSets);
             }
-            catch (System.Exception)
+            catch 
             {
                 throw;
             }
@@ -94,9 +94,9 @@ namespace TwoPointsLib.Collections
                 throw;
             }
         }
-        public static IncidentLists Create(IPixelsSets pixelsSets)
+        public static IncidenceLists Create(IPixelsSets pixelsSets)
         {
-            return new IncidentLists(pixelsSets);
+            return new IncidenceLists(pixelsSets);
         }
 
     }

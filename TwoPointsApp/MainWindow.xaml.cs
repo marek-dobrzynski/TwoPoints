@@ -53,7 +53,6 @@ namespace TwoPointsApp
             
         }
 
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             _pixelManager.ClearCanvas();

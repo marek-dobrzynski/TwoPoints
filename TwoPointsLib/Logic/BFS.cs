@@ -6,8 +6,8 @@ using TwoPointsLib.Interfaces;
 namespace TwoPointsLib.Logic
 {
     /// <summary>
-    /// BFS(breadth-first search) is an algorithm for searching graph structure (in application I define canvas as graph where every pixel is node ). 
-    /// Algorithm finds all paths from one node to other, if any exists. Algorithm works on created IncidentLists. 
+    /// BFS(breadth-first search) is an algorithm for searching graph structure (in application I define canvas as graph where every 
+    /// pixel is node ). Algorithm finds all paths from one node to other, if any exists. Algorithm works on created IncidenceLists. 
     /// Algorithm arrays :
     ///     _visited -> to find out if current node was visted(used), if so take another
     ///     _previous -> to hold current node (pixel) neighbours
@@ -26,14 +26,14 @@ namespace TwoPointsLib.Logic
         /// <summary>
         /// Method uses Queue to search all nodes(Pixels). Every loop add neneighbour of current node to Queue until Queue is empty.
         /// </summary>
-        public void FindPath(IPixel startPixel, IPixel endPixel, IPixelsSets pixelsSets, IIncidentLists incidentLists)
+        public void FindPath(IPixel startPixel, IPixel endPixel, IPixelsSets pixelsSets, IIncidenceLists incidenceLists)
         {
             try
             {
                 _startPixelId = pixelsSets.GetPixelId(startPixel);
                 _endPixelId = pixelsSets.GetPixelId(endPixel);
 
-                Run(startPixel, pixelsSets, incidentLists);
+                Run(startPixel, pixelsSets, incidenceLists);
 
                 List<int> kolekcja;
 
@@ -63,7 +63,7 @@ namespace TwoPointsLib.Logic
         /// Method uses Queue to search all nodes(Pixels). Method loops through neneighbours of current node and enqueue them.
         /// Next dequeue node(pixel) to set it visted and set distance. Method works as long as Queue is not empty.
         /// </summary>
-        private void Run(IPixel startPixel, IPixelsSets pixelsArrays, IIncidentLists incidentLists)
+        private void Run(IPixel startPixel, IPixelsSets pixelsArrays, IIncidenceLists incidentLists)
         {
             _visited = new bool[pixelsArrays.IdsCounter];
             _distance = new int[pixelsArrays.IdsCounter];

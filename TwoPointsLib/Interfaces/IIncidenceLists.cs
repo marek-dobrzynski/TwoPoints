@@ -2,7 +2,7 @@
 
 namespace TwoPointsLib.Interfaces
 {
-    public interface IIncidentLists
+    public interface IIncidenceLists
     {
         Dictionary<int, List<int>> Lists { get; }
         void RemoveFromLists(IPixelsSets pixelsSets);

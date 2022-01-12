@@ -19,7 +19,7 @@ namespace TwoPointsLib
         private readonly Canvas _canvas;
         private readonly int _width;
         private readonly int _height;
-        private readonly IIncidentLists _incidentLists;
+        private readonly IIncidenceLists _incidenceLists;
         private readonly IBFS _bfs;
         private readonly IPixelsSets _pixelsSets;
         private readonly IDraw _drawing;
@@ -30,7 +30,7 @@ namespace TwoPointsLib
             _width = Convert.ToInt32(canvas.Width);
             _height = Convert.ToInt32(canvas.Height);
             _pixelsSets = PixelsSets.Create(_width, _height);
-            _incidentLists = IncidentLists.Create(_pixelsSets);
+            _incidenceLists = IncidenceLists.Create(_pixelsSets);
             _bfs = BFS.Create();
             _drawing = Draw.Create();
         }
@@ -53,9 +53,9 @@ namespace TwoPointsLib
                 {
                     _endPixel = Pixel.Create(point);
                     _pixelsSets.CheckPixelUsed(_endPixel);
-                    _bfs.FindPath(_startPixel, _endPixel, _pixelsSets, _incidentLists);
+                    _bfs.FindPath(_startPixel, _endPixel, _pixelsSets, _incidenceLists);
                     _drawing.DrawLine(_pixelsSets, _canvas);
-                    _incidentLists.RemoveFromLists(_pixelsSets);
+                    _incidenceLists.RemoveFromLists(_pixelsSets);
                     ClearSelectedPixels();
                 }
             }

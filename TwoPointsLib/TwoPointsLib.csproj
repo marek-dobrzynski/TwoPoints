@@ -49,10 +49,10 @@
     <Compile Include="Graphics\Draw.cs" />
     <Compile Include="Interfaces\IBFS.cs" />
     <Compile Include="Interfaces\IDraw.cs" />
-    <Compile Include="Interfaces\IIncidentLists.cs" />
+    <Compile Include="Interfaces\IIncidenceLists.cs" />
     <Compile Include="Interfaces\IPixel.cs" />
     <Compile Include="Interfaces\IPixelManager.cs" />
-    <Compile Include="Collections\IncidentLists.cs" />
+    <Compile Include="Collections\IncidenceLists.cs" />
     <Compile Include="Interfaces\IPixelsSets.cs" />
     <Compile Include="Logic\BFS.cs" />
     <Compile Include="Models\Pixel.cs" />

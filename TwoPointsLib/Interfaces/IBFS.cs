@@ -2,6 +2,6 @@
 {
     public interface IBFS
     {
-        void FindPath(IPixel startPixel, IPixel endPixel, IPixelsSets pixelsSets, IIncidentLists incidentLists);
+        void FindPath(IPixel startPixel, IPixel endPixel, IPixelsSets pixelsSets, IIncidenceLists incidentLists);
     }
 }
