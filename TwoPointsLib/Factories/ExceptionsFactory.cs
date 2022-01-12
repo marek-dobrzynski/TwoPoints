@@ -9,7 +9,7 @@ namespace TwoPointsLib.Factories
     {
         public static Exception NoPathFound() 
         {
-            return new Exception("Path not found! Clear canvas to start again.");
+            return new Exception("Path not found!");
         }
         public static Exception PixelVisited()
         {

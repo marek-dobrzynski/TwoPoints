@@ -23,7 +23,10 @@ namespace TwoPointsApp
         {
             try
             {
-                _pixelManager.UserClick(e.GetPosition((IInputElement)sender));
+                var point = e.GetPosition((IInputElement)sender);
+                SetLabels(point);
+                _pixelManager.UserClick(point);
+                
             }
             catch (Exception exception)
             {
@@ -34,6 +37,20 @@ namespace TwoPointsApp
         private void ShowAlert(Exception exception)
         {
             MessageBox.Show(exception.Message);
+        }
+
+        private void SetLabels(Point point)
+        {
+            if (point1.Content == null || point2.Content != null)
+            {
+                point1.Content = $"x: {point.X} y: {point.Y}";
+                point2.Content = null;
+            }
+            else if (point2.Content == null)
+            {
+                point2.Content = $"x: {point.X} y: {point.Y}";
+            }
+            
         }
 
 
